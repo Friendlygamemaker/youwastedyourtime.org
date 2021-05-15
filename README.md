@@ -1,2 +1,2 @@
-# youwastedyourtime.org
+# http://www.youwastedyourtime.org
 
