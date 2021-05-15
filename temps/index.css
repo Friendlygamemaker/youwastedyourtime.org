@@ -3,6 +3,7 @@ html {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     background: rgb(50, 50, 50) url("background.png") repeat;
+    width: 100%;
 }
 
 body {
@@ -23,15 +24,17 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
     overflow: hidden;
-    background-color: darkblue;
+    background-color: rgb(50, 50, 150);
     margin: 0;
     padding: 0;
     align-self: center;
+    width: 100%;
 }
 
 #navigation {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 ul > li {
@@ -52,8 +55,15 @@ ul > li a {
     text-decoration: none;
 }
 
+@keyframes hoverTime {
+    from {background-color: rgb(50, 50, 150);}
+    to {background-color: rgb(50, 50, 100);}
+}
+
 ul > li a:hover {
     background-color: rgb(50, 50, 100);
+    animation-name: hoverTime;
+    animation-duration: 1s;
 }
 
 #content {
@@ -101,12 +111,13 @@ footer {
         font-size: 125%;
     }
 
-    #sub {
-        font-size: 125%;
+    #title {
+        padding: 10px 0 10px 0;
+        font-size: 80%;
     }
 
-    #method {
-        font-size: 125%;
+    #SForm {
+        font-size: 75%;
     }
 
     #navList {

@@ -23,7 +23,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
     overflow: hidden;
-    background-color: darkblue;
+    background-color: rgb(50, 50, 150);
     margin: 0;
     padding: 0;
     align-self: center;
@@ -52,8 +52,15 @@ ul > li a {
     text-decoration: none;
 }
 
+@keyframes hoverTime {
+    from {background-color: rgb(50, 50, 150);}
+    to {background-color: rgb(50, 50, 100);}
+}
+
 ul > li a:hover {
     background-color: rgb(50, 50, 100);
+    animation-name: hoverTime;
+    animation-duration: 1s;
 }
 
 #content {
@@ -110,10 +117,13 @@ footer {
         font-size: 125%;
     }
 
+    #title {
+        font-size: 80%;
+        padding: 10px 0 10px 0;
+    }
+
     #submit {
-        width: 125%;
-        height: 125%;
-        font-size: 125%;
+        font-size: 100%;
     }
 
     #navList {
