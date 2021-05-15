@@ -1,3 +1,3 @@
 # http://www.youwastedyourtime.org
 
-### Source Code ###
+Look at the source code above
