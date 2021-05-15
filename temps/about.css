@@ -2,6 +2,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    /*noinspection CssUnknownTarget*/
     background: rgb(50, 50, 50) url("background.png") repeat;
 }
 
@@ -14,7 +15,7 @@ body {
     text-align: center;
     width: 100%;
     background: black;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     color: rgb(200, 200, 200);
 }
 
@@ -66,6 +67,29 @@ ul > li a:hover {
 #content {
     text-align: center;
     color: rgb(200, 200, 200);
+    padding: 10px;
+}
+
+#content > a {
+    text-decoration: underline overline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 3px;
+}
+
+#content > a:link {
+    color: rgb(150, 255, 255);
+}
+
+#content > a:visited {
+    color: rgb(255, 255, 200);
+}
+
+#content > a:hover {
+    color: rgb(255, 50, 255);
+}
+
+#content > a:active {
+    color: rgb(50, 255, 255);
 }
 
 footer {
@@ -79,7 +103,6 @@ footer {
     }
 
     #title {
-        padding: 10px 0 10px 0;
         font-size: 80%;
     }
 

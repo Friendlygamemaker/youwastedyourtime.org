@@ -15,7 +15,7 @@ body {
     text-align: center;
     width: 100%;
     background: black;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     color: rgb(200, 200, 200);
 }
 
@@ -112,7 +112,6 @@ footer {
     }
 
     #title {
-        padding: 10px 0 10px 0;
         font-size: 80%;
     }
 

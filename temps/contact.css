@@ -14,7 +14,7 @@ body {
     text-align: center;
     width: 100%;
     background: black;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     color: rgb(200, 200, 200);
 }
 
@@ -68,6 +68,13 @@ ul > li a:hover {
     color: rgb(200, 200, 200);
 }
 
+#content > p > a > button {
+    background-color: rgb(50,50,50);
+    border-radius: 15px;
+    border: solid rgb(200, 200, 200);
+    color: rgb(255, 255, 255);
+}
+
 footer {
     text-align: center;
     color: rgb(150, 150, 150);
@@ -79,8 +86,11 @@ footer {
     }
 
     #title {
-        padding: 10px 0 10px 0;
         font-size: 80%;
+    }
+
+    #content > p > a > button {
+        font-size: 125%;
     }
 
     #navList {

@@ -14,7 +14,7 @@ body {
     text-align: center;
     width: 100%;
     background: black;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     color: rgb(200, 200, 200);
 }
 
@@ -97,6 +97,11 @@ footer {
     margin: 10px;
 }
 
+#subComment {
+    text-align: center;
+    color: rgb(200, 200, 200);
+}
+
 #subDiv {
     align-items: center;
     justify-content: center;
@@ -119,7 +124,6 @@ footer {
 
     #title {
         font-size: 80%;
-        padding: 10px 0 10px 0;
     }
 
     #submit {
