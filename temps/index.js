@@ -26,6 +26,7 @@ let selectionSort = async function () {
         await sleep(50);
     }
     btn.disabled = false;
+    btn.style.color = 'rgb(255, 255, 255)'
 }
 
 let bubbleSort = async function () {
@@ -45,6 +46,7 @@ let bubbleSort = async function () {
         }
     }
     btn.disabled = false;
+    btn.style.color = 'rgb(255, 255, 255)'
 }
 
 let insertionSort = async function () {
@@ -66,6 +68,7 @@ let insertionSort = async function () {
         await sleep(1);
     }
     btn.disabled = false;
+    btn.style.color = 'rgb(255, 255, 255)'
 }
 
 let sortDrawNums = function (nums) {
@@ -80,6 +83,7 @@ let sortDrawNums = function (nums) {
 let sub = function (e) {
     e.preventDefault();
     btn.disabled = true;
+    btn.style.color = 'rgb(100, 100, 100)'
     let method = document.getElementById("method").value;
     console.log(method);
     switch (method) {

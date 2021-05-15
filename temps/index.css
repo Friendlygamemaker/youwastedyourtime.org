@@ -1,7 +1,8 @@
 html {
-    background: antiquewhite;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(50, 50, 50) url("background.png") repeat;
 }
 
 body {
@@ -11,6 +12,10 @@ body {
 
 #title {
     text-align: center;
+    width: 100%;
+    background: black;
+    padding: 10px;
+    color: rgb(200, 200, 200);
 }
 
 #navList {
@@ -35,11 +40,13 @@ ul > li {
     display: flex;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 ul > li a {
     display: flex;
     color: deeppink;
-    text-align: center;
+    width: 100%;
+    justify-content: center;
     margin: 0;
     padding: 1em;
     text-decoration: none;
@@ -51,6 +58,7 @@ ul > li a:hover {
 
 #content {
     text-align: center;
+    color: rgb(200, 200, 200);
 }
 
 #sort {
@@ -59,6 +67,7 @@ ul > li a:hover {
 
 #SForm {
     display: inline-block;
+    color: rgb(255, 255, 255);
 }
 
 #data > li {
@@ -69,4 +78,38 @@ ul > li a:hover {
 
 footer {
     text-align: center;
+    color: rgb(150, 150, 150);
+}
+
+#sub {
+    background-color: rgb(50,50,50);
+    border-radius: 15px;
+    border: solid rgb(200, 200, 200);
+    color: rgb(255, 255, 255);
+}
+
+#method {
+    background-color: rgb(50,50,50);
+    border-radius: 5px;
+    border: solid rgb(200, 200, 200);
+    color: rgb(255, 255, 255);
+}
+
+
+@media only screen and (max-width: 650px) {
+    html {
+        font-size: 125%;
+    }
+
+    #sub {
+        font-size: 125%;
+    }
+
+    #method {
+        font-size: 125%;
+    }
+
+    #navList {
+        display: block;
+    }
 }

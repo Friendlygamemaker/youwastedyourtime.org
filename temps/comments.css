@@ -1,7 +1,8 @@
 html {
-    background: antiquewhite;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(50, 50, 50) url("background.png") repeat;
 }
 
 body {
@@ -11,6 +12,10 @@ body {
 
 #title {
     text-align: center;
+    width: 100%;
+    background: black;
+    padding: 10px;
+    color: rgb(200, 200, 200);
 }
 
 #navList {
@@ -35,11 +40,13 @@ ul > li {
     display: flex;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 ul > li a {
     display: flex;
     color: deeppink;
-    text-align: center;
+    width: 100%;
+    justify-content: center;
     margin: 0;
     padding: 1em;
     text-decoration: none;
@@ -51,10 +58,12 @@ ul > li a:hover {
 
 #content {
     text-align: center;
+    color: rgb(200, 200, 200);
 }
 
 footer {
     text-align: center;
+    color: rgb(150, 150, 150);
 }
 
 #submitCommit{
@@ -66,20 +75,18 @@ footer {
     justify-content: center;
     align-items: center;
     display: grid;
+    color: rgb(200, 200, 200);
+}
+
+#submit {
+    background-color: rgb(50,50,50);
+    border-radius: 10px;
+    border: solid rgb(200, 200, 200);
+    color: rgb(255, 255, 255);
 }
 
 #text {
     display: flex;
-    margin: 10px;
-}
-
-#RBD {
-    align-items: center;
-    justify-content: center;
-    display: grid;
-}
-
-#refresh {
     margin: 10px;
 }
 
@@ -91,4 +98,25 @@ footer {
 
 #comments {
     word-wrap: break-word;
+    color: rgb(200, 200, 200);
+}
+
+#LText {
+    padding: 5px 0 0 8px;
+}
+
+@media only screen and (max-width: 650px) {
+    html {
+        font-size: 125%;
+    }
+
+    #submit {
+        width: 125%;
+        height: 125%;
+        font-size: 125%;
+    }
+
+    #navList {
+        display: block;
+    }
 }
