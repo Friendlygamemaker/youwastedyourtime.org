@@ -10,3 +10,6 @@ old/
 
 # log files
 logs/
+
+# webstorm files
+.idea/
