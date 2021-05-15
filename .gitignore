@@ -1,0 +1,12 @@
+# comments
+comments/
+
+# testing files
+test/
+test.js
+
+# old files
+old/
+
+# log files
+logs/
