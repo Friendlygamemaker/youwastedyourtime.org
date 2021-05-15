@@ -1,0 +1,37 @@
+{"text":"It's working","name":"Dev(noah)"}
+{"text":"We're no strangers to love","name":"Bobert"}
+{"text":"first","name":"otto"}
+{"text":"man this really wasted my time","name":"otto"}
+{"text":"man this really wasted my time'); DROP TABLE comments;--","name":"otto"}
+{"text":"Good site but it's a bit of a waste of time","name":"XyresicLemon"}
+{"text":"you should make it so it refreshes the comments when you refresh the page","name":"otto"}
+{"text":"or when you submit one","name":"otto"}
+{"text":"Yote","name":"Xander Henry"}
+{"text":"Every time you submit it now refreshes","name":"Dev(noah)"}
+{"text":"that's epic","name":"otto"}
+{"text":"this is a new comment","name":"Dev(noah)"}
+{"text":"you might not need the refresh button anymore :=)","name":"otto"}
+{"text":"Glass of Juice","name":"EricZ"}
+{"text":"i wonder what the character limit is on this thing","name":"otto"}
+{"text":"There is not one","name":"Dev(noah)"}
+{"text":"lol","name":"otto"}
+{"text":"weird how it failed on the puerto rico flag but none of the other ones 🇵🇷","name":"otto"}
+{"text":"oh it's probably because of the reverse character. probably that's because i copied it wrong though.","name":"otto"}
+{"text":"ya that's weird\n","name":"Dev(noah)"}
+{"text":"there is now a character limit","name":"Dev(noah)"}
+{"text":"It's still working","name":"Dev(noah)"}
+{"text":"This is no waste of time, I only wish it made the noise","name":"Peace"}
+{"text":"Utter and complete trash, can we stop this now k thx bye","name":"jkcoxson"}
+{"text":"This is so bad I really should have stoped waisting my time","name":"Alvin"}
+{"text":"Is there anyone online I can talk to?","name":"Samuel"}
+{"text":"Hi Samuel What's Up!","name":"Dev(noah)"}
+{"name":"Dev(noah)","text":"It works!"}
+{"name":"Dev(noah)","text":"poggers"}
+{"text":"hello","name":"Bobert"}
+{"text":"I just wanted to say that I think this site is a waste of time","name":"Yoosh"}
+{"text":"I've wasted my time\n\"alert('XSS')\"I'm mad\"","name":"Jared"}
+{"text":"You're right. I wasted my time.","name":"Tom Bombadillo"}
+{"name":"Dev(noah)","text":"Forgot to start the server back up, whoops..."}
+{"text":"Man I wasted so much time instead of doing my onlyfans.","name":"CadeC"}
+{"text":"Yolo","name":"${undefined}"}
+{"text":"Yibambe","name":"${1234}"}
