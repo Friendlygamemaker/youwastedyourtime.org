@@ -121,3 +121,6 @@
 8:25:55 PM: GET/: 200
 9:42:15 PM: GET/index.js: 200
 9:42:15 PM: GET/index.css: 200
+10:25:54 PM: GET/: 200
+10:25:54 PM: GET/index.css: 200
+10:25:54 PM: GET/index.js: 200
