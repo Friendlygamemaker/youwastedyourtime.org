@@ -37,7 +37,7 @@ let mergeSort = async function () {
 
     sortDrawNums(nums);
 
-    await Ms(nums, 0, nums.length);
+    await Ms(nums, 0, nums.length-1);
 
     await sleep(10);
 
@@ -47,55 +47,43 @@ let mergeSort = async function () {
 
 let Ms = async function (nums, start, stop) {
 
-    let distance = stop - start;
+    let distance = (stop) - start;
 
     if (distance > 1) {
         nums = await Ms(nums, start, start + Math.floor(distance/2));
         nums = await Ms(nums, start+Math.floor(distance/2)+1, stop);
     } else {
         if (nums[start] > nums[stop]) {
-            let temp = nums[start];
-            nums[start] = nums[stop];
-            nums[stop] = temp;
+            let temp = nums[stop];
+            nums[stop] = nums[start];
+            nums[start] = temp;
         }
         sortDrawNums(nums);
-        await sleep(50);
-        return nums;
+        await sleep(10);
     }
+
     let i = start;
     let j = start+Math.floor(distance/2)+1;
-    let tempList = [];
     let done = false;
     while (!done) {
-        if (j === stop && !(i === start+Math.floor(distance/2))) {
-            tempList.push(nums[i]);
-            i++;
-        } else if (i === start+Math.floor(distance/2)) {
-            if (j === stop) {
-                done = true;
-            } else {
-                tempList.push(nums[j]);
-                j++;
-            }
+        if (j >= stop+1 || i >= j) {
+            done = true;
         } else {
             if (nums[i] > nums[j]) {
-                tempList.push(nums[j]);
+                let temp = nums[j]
+                for (let index = j; index > i; index--) {
+                    nums[index] = nums[index - 1]
+                }
+                nums[i] = temp;
+                sortDrawNums(nums);
+                await sleep(10);
                 j++
+                i++
             } else {
-                tempList.push(nums[i]);
                 i++
             }
         }
     }
-
-    let cNum = start;
-    for (let index in tempList) {
-        nums[cNum] = index;
-        cNum++;
-    }
-
-    sortDrawNums(nums);
-    await sleep(50);
     return nums;
 }
 
