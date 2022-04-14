@@ -29,6 +29,76 @@ let selectionSort = async function () {
     btn.style.color = 'rgb(255, 255, 255)'
 }
 
+let mergeSort = async function () {
+    let nums = []
+    for (let i = 0; i < 100; i++) {
+        nums.push(Math.floor(Math.random()*1000));
+    }
+
+    sortDrawNums(nums);
+
+    await Ms(nums, 0, nums.length);
+
+    await sleep(10);
+
+    btn.disabled = false;
+    btn.style.color = 'rgb(255, 255, 255)'
+}
+
+let Ms = async function (nums, start, stop) {
+
+    let distance = stop - start;
+
+    if (distance > 1) {
+        nums = await Ms(nums, start, start + Math.floor(distance/2));
+        nums = await Ms(nums, start+Math.floor(distance/2)+1, stop);
+    } else {
+        if (nums[start] > nums[stop]) {
+            let temp = nums[start];
+            nums[start] = nums[stop];
+            nums[stop] = temp;
+        }
+        sortDrawNums(nums);
+        await sleep(50);
+        return nums;
+    }
+    let i = start;
+    let j = start+Math.floor(distance/2)+1;
+    let tempList = [];
+    let done = false;
+    while (!done) {
+        if (j === stop && !(i === start+Math.floor(distance/2))) {
+            tempList.push(nums[i]);
+            i++;
+        } else if (i === start+Math.floor(distance/2)) {
+            if (j === stop) {
+                done = true;
+            } else {
+                tempList.push(nums[j]);
+                j++;
+            }
+        } else {
+            if (nums[i] > nums[j]) {
+                tempList.push(nums[j]);
+                j++
+            } else {
+                tempList.push(nums[i]);
+                i++
+            }
+        }
+    }
+
+    let cNum = start;
+    for (let index in tempList) {
+        nums[cNum] = index;
+        cNum++;
+    }
+
+    sortDrawNums(nums);
+    await sleep(50);
+    return nums;
+}
+
 let bubbleSort = async function () {
     let nums = []
     for (let i = 0; i < 100; i++) {
@@ -95,6 +165,9 @@ let sub = function (e) {
             break;
         case 'Insertion':
             insertionSort().then();
+            break;
+        case 'Merge':
+            mergeSort().then();
             break;
         default:
             alert('how?');

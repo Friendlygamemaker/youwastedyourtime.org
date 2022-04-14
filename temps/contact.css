@@ -23,10 +23,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
     overflow: hidden;
-    background-color: rgb(50, 50, 150);
+    background-color: #2F2F2F;
     margin: 0;
     padding: 0;
     align-self: center;
+    width: 100%;
 }
 
 #navigation {
@@ -44,25 +45,26 @@ ul > li {
 }
 ul > li a {
     display: flex;
-    color: deeppink;
+    color: #999;
     width: 100%;
     justify-content: center;
     margin: 0;
-    padding: 1em;
+    padding: .75em;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 @keyframes hoverTime {
-    from {background-color: rgb(50, 50, 150);}
-    to {background-color: rgb(50, 50, 100);}
+    100% {
+        background-color: #222;
+    }
 }
 
 ul > li a:hover {
-    background-color: rgb(50, 50, 100);
     animation-name: hoverTime;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
-
 #content {
     text-align: center;
     color: rgb(200, 200, 200);
