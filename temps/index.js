@@ -87,6 +87,68 @@ let Ms = async function (nums, start, stop) {
     return nums;
 }
 
+let quickSort = async function () {
+    let nums = []
+    for (let i = 0; i < 100; i++) {
+        nums.push(Math.floor(Math.random()*1000));
+    }
+
+    sortDrawNums(nums);
+
+    await Qs(nums, 0, nums.length-1);
+
+    await sleep(10);
+
+    btn.disabled = false;
+    btn.style.color = 'rgb(255, 255, 255)'
+}
+
+let Qs = async function (nums, low, high) {
+
+    let i = low;
+    let j = high-1;
+    let done = false;
+    let distance = high-low;
+    let piv = nums[high];
+
+    if (distance <= 0) {
+        return nums;
+    }
+
+    while (!done) {
+        if (nums[i] < piv) {
+            i++
+        } else if (j > 0 && nums[j] >= piv) {
+            j--
+        } else {
+            if (i >= j) {
+                done = true;
+            } else {
+                let temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+                sortDrawNums(nums);
+                await sleep(10);
+            }
+        }
+
+
+    }
+
+    let temp = nums[i];
+    nums[i] = piv;
+    nums[high] = temp;
+    sortDrawNums(nums);
+    await sleep(10);
+
+    nums = await Qs(nums, low, i-1);
+    nums = await Qs(nums, i+1, high);
+
+    sortDrawNums(nums);
+    await sleep(10);
+    return nums;
+}
+
 let bubbleSort = async function () {
     let nums = []
     for (let i = 0; i < 100; i++) {
@@ -156,6 +218,9 @@ let sub = function (e) {
             break;
         case 'Merge':
             mergeSort().then();
+            break;
+        case 'Quick':
+            quickSort().then();
             break;
         default:
             alert('how?');
