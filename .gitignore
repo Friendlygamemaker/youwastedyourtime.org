@@ -13,3 +13,6 @@ logs/
 
 # webstorm files
 .idea/
+
+# https files
+https/
