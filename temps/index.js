@@ -9,7 +9,7 @@ function sleep(ms) {
 let selectionSort = async function () {
     let nums = []
     for (let i = 0; i < 100; i++) {
-        nums.push(Math.floor(Math.random()*1000));
+        nums.push(Math.floor(Math.random()*500));
     }
     sortDrawNums(nums);
     for (let i = 0; i < nums.length; i++) {
@@ -32,7 +32,7 @@ let selectionSort = async function () {
 let mergeSort = async function () {
     let nums = []
     for (let i = 0; i < 100; i++) {
-        nums.push(Math.floor(Math.random()*1000));
+        nums.push(Math.floor(Math.random()*500));
     }
 
     sortDrawNums(nums);
@@ -90,7 +90,7 @@ let Ms = async function (nums, start, stop) {
 let quickSort = async function () {
     let nums = []
     for (let i = 0; i < 100; i++) {
-        nums.push(Math.floor(Math.random()*1000));
+        nums.push(Math.floor(Math.random()*500));
     }
 
     sortDrawNums(nums);
@@ -152,7 +152,7 @@ let Qs = async function (nums, low, high) {
 let bubbleSort = async function () {
     let nums = []
     for (let i = 0; i < 100; i++) {
-        nums.push(Math.floor(Math.random()*1000));
+        nums.push(Math.floor(Math.random()*500));
     }
     sortDrawNums(nums);
     let n = nums.length;
@@ -172,7 +172,7 @@ let bubbleSort = async function () {
 let insertionSort = async function () {
     let nums = []
     for (let i = 0; i < 100; i++) {
-        nums.push(Math.floor(Math.random()*1000));
+        nums.push(Math.floor(Math.random()*500));
     }
     sortDrawNums(nums);
     let n = nums.length;
@@ -194,7 +194,7 @@ let insertionSort = async function () {
 let sortDrawNums = function (nums) {
     let str = ''
     for (let i = 0; i < nums.length; i++) {
-        str = str + `<li style="height: ${nums[i]+1}px; width: 2px"></li>`
+        str = str + `<li style="height: ${nums[i]+1}px; width: 4px"></li>`
     }
 
     data.innerHTML = str;
