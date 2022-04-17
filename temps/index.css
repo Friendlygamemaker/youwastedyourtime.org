@@ -111,6 +111,10 @@ footer {
     cursor: pointer;
 }
 
+.numsRep {
+    width: 4px;
+}
+
 
 @media only screen and (max-width: 650px) {
     html {
@@ -127,5 +131,9 @@ footer {
 
     #navList {
         display: block;
+    }
+
+    .numsRep {
+        width: 2px;
     }
 }

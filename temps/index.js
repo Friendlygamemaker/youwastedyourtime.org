@@ -192,7 +192,7 @@ let insertionSort = async function () {
 let sortDrawNums = function (nums) {
     let str = ''
     for (let i = 0; i < nums.length; i++) {
-        str = str + `<li style="height: ${nums[i]+1}px; width: 4px"></li>`
+        str = str + `<li class="numsRep" style="height: ${nums[i]+1}px;"></li>`
     }
 
     data.innerHTML = str;
