@@ -131,8 +131,6 @@ let Qs = async function (nums, low, high) {
                 await sleep(10);
             }
         }
-
-
     }
 
     let temp = nums[i];
