@@ -1,74 +1,4 @@
-html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    background: rgb(50, 50, 50) url("background.png") repeat;
-    width: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-#title {
-    text-align: center;
-    width: 100%;
-    background: black;
-    padding: 10px 0 10px 0;
-    color: rgb(200, 200, 200);
-}
-
-#navList {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    list-style: none;
-    overflow: hidden;
-    background-color: #2F2F2F;
-    margin: 0;
-    padding: 0;
-    align-self: center;
-    width: 100%;
-}
-
-#navigation {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-ul > li {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-ul > li a {
-    display: flex;
-    color: #999;
-    width: 100%;
-    justify-content: center;
-    margin: 0;
-    padding: .75em;
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-@keyframes hoverTime {
-    100% {
-        background-color: #222;
-    }
-}
-
-ul > li a:hover {
-    animation-name: hoverTime;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-#content {
+#thisText {
     text-align: center;
     color: rgb(200, 200, 200);
 }
@@ -86,11 +16,6 @@ ul > li a:hover {
     display: inline-block;
     background-color: deeppink;
     vertical-align: top;
-}
-
-footer {
-    text-align: center;
-    color: rgb(150, 150, 150);
 }
 
 #sub {
@@ -117,20 +42,8 @@ footer {
 
 
 @media only screen and (max-width: 650px) {
-    html {
-        font-size: 125%;
-    }
-
-    #title {
-        font-size: 80%;
-    }
-
     #SForm {
         font-size: 75%;
-    }
-
-    #navList {
-        display: block;
     }
 
     .numsRep {

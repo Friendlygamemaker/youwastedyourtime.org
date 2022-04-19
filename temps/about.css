@@ -1,115 +1,27 @@
-html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    /*noinspection CssUnknownTarget*/
-    background: rgb(50, 50, 50) url("background.png") repeat;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-#title {
-    text-align: center;
-    width: 100%;
-    background: black;
-    padding: 10px 0 10px 0;
-    color: rgb(200, 200, 200);
-}
-
-#navList {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    list-style: none;
-    overflow: hidden;
-    background-color: #2F2F2F;
-    margin: 0;
-    padding: 0;
-    align-self: center;
-    width: 100%;
-}
-
-#navigation {
-    margin: 0;
-    padding: 0;
-}
-
-ul > li {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-ul > li a {
-    display: flex;
-    color: #999;
-    width: 100%;
-    justify-content: center;
-    margin: 0;
-    padding: .75em;
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-@keyframes hoverTime {
-    100% {
-        background-color: #222;
-    }
-}
-
-ul > li a:hover {
-    animation-name: hoverTime;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-#content {
+.content {
     text-align: center;
     color: rgb(200, 200, 200);
     padding: 10px;
 }
 
-#content > a {
+.content > a {
     text-decoration: underline overline;
     text-decoration-thickness: 5px;
     text-underline-offset: 3px;
 }
 
-#content > a:link {
+.content > a:link {
     color: rgb(150, 255, 255);
 }
 
-#content > a:visited {
+.content > a:visited {
     color: rgb(255, 255, 200);
 }
 
-#content > a:hover {
+.content > a:hover {
     color: rgb(255, 50, 255);
 }
 
-#content > a:active {
+.content > a:active {
     color: rgb(50, 255, 255);
-}
-
-footer {
-    text-align: center;
-    color: rgb(150, 150, 150);
-}
-
-@media only screen and (max-width: 650px) {
-    html {
-        font-size: 125%;
-    }
-
-    #title {
-        font-size: 80%;
-    }
-
-    #navList {
-        display: block;
-    }
 }
